@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://dhrlkce508tr2"]
+
+[node name="Tree_top" type="StaticBody2D"]

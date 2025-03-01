@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkpnsjajad66u"]
+
+[ext_resource type="Script" path="res://Killzone.cs" id="1_ovr6c"]
+
+[node name="Killzone" type="Area2D" node_paths=PackedStringArray("RespawnTimer")]
+collision_mask = 2
+script = ExtResource("1_ovr6c")
+RespawnTimer = NodePath("Timer")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.6
+one_shot = true
