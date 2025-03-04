@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://b362su1l42kx1"]
+
+[ext_resource type="Script" path="res://Scripts/sign.gd" id="1_x4nix"]
+[ext_resource type="Texture2D" uid="uid://c35xjbmfs6njc" path="res://Assets/sprites/world_tileset.png" id="2_y3eb8"]
+[ext_resource type="PackedScene" uid="uid://boly20iitym65" path="res://Interaction_Components/interactable.tscn" id="3_yi4fo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_irpob"]
+radius = 14.0
+
+[node name="Sign" type="StaticBody2D"]
+script = ExtResource("1_x4nix")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_y3eb8")
+region_enabled = true
+region_rect = Rect2(128, 48, 16, 16)
+
+[node name="Interactable" parent="." instance=ExtResource("3_yi4fo")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
+shape = SubResource("CircleShape2D_irpob")

@@ -1,7 +1,8 @@
-[gd_scene load_steps=41 format=3 uid="uid://bu821w4nvipj3"]
+[gd_scene load_steps=42 format=3 uid="uid://bu821w4nvipj3"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_0knpf"]
 [ext_resource type="Texture2D" uid="uid://pbq67vs4t2ep" path="res://Assets/sprites/knight.png" id="1_d4eut"]
+[ext_resource type="PackedScene" uid="uid://sk8utqgu6225" path="res://Interaction_Components/interacting_component.tscn" id="3_15wbk"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pnm13"]
 atlas = ExtResource("1_d4eut")
@@ -295,3 +296,6 @@ autoplay = "idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -5)
 shape = SubResource("CircleShape2D_n0m40")
+
+[node name="InteractingComponent" parent="." instance=ExtResource("3_15wbk")]
+position = Vector2(0, -9)

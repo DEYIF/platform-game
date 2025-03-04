@@ -1,6 +1,6 @@
 extends Node2D
 
-const SPEEDx = 60
+@export var SPEEDx = 60
 const SPEEDy = 150
 var direction = -1
 

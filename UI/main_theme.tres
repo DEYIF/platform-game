@@ -1,0 +1,22 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://dok4j3y7akal2"]
+
+[ext_resource type="FontFile" uid="uid://dr1qwtki6wswa" path="res://Assets/fonts/VonwaonBitmap-12px.ttf" id="1_66d62"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fl5b5"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+
+[resource]
+default_font = ExtResource("1_66d62")
+default_font_size = 36
+Button/colors/font_color = Color(0.87451, 0.87451, 0.87451, 0.576471)
+Button/colors/font_outline_color = Color(0.00392157, 0.0862745, 0.227451, 1)
+Button/colors/icon_focus_color = Color(1, 1, 1, 1)
+Button/colors/icon_hover_pressed_color = Color(1, 1, 1, 1)
+Button/constants/outline_size = 4
+Button/styles/disabled = SubResource("StyleBoxEmpty_fl5b5")
+Button/styles/hover = SubResource("StyleBoxEmpty_fl5b5")
+Button/styles/normal = SubResource("StyleBoxEmpty_fl5b5")
+Button/styles/pressed = SubResource("StyleBoxEmpty_fl5b5")

@@ -1,0 +1,9 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://ce22vyeauasoi"]
+
+[ext_resource type="FontFile" uid="uid://dr1qwtki6wswa" path="res://Assets/fonts/VonwaonBitmap-12px.ttf" id="1_4sbf1"]
+
+[resource]
+font = ExtResource("1_4sbf1")
+font_size = 60
+outline_size = 4
+outline_color = Color(0, 0, 0, 1)
